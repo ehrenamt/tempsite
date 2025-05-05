@@ -1,0 +1,309 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700); */
+
+:root {
+	--dark-1: rgb(52, 52, 52);
+	--dark-1: rgb(241, 235, 235);
+	--lightgrey-1: rgb(100, 100, 100);
+
+	--body-padding: 30px;
+	
+	--secondary-theme: rgb(59, 169, 159);
+
+	--language-font-size-base: 12px;
+	--header-font-size-base: 20px;
+	--header-font-size-small: 14px;
+	--para-font-size-base: 12px;
+	--tech-font-size-base: 10px;
+
+	/* ORIGINAL */
+	/* --dark-1: rgb(55, 55, 55); */
+	--bg-1: rgb(241, 241, 241);
+	
+	/* NIER */
+	--dark-1: rgb(78, 75, 66);
+	/* --bg-1: rgb(241, 235, 235); */
+	--card-bg: rgb(233, 230, 230);
+
+	/* GOODONE */
+	--bg-1: #2F3640;
+	--dark-1:#F0F3F4;
+	--lightgrey-1: #136B58;
+	--card-bg: #434953;
+
+	/* AGIN */
+	--bg-1: #1e1e1e;
+	--dark-1:#f1f1f1;
+	--lightgrey-1: rgb(59, 169, 159);
+	--card-bg: #2a2a2a;
+}
+
+a {
+	text-decoration: none;
+	color: var(--dark-1);
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	/* font: 100 1em/1 "Inter", sans-serif;
+	font-weight: 400; */
+	letter-spacing: 2.5px;
+	letter-spacing: 2px;
+	letter-spacing: 1.5px;
+
+	font-family: "DM Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+
+	/* height: 100vh; */
+	height: 100%;
+	background-color: var(--bg-1);
+    background-attachment: fixed; /* Ensure the background stays fixed */
+    background-size: cover;
+	line-height: 1.75;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: var(--dark-1);
+	height: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 400;
+	font-size: --header-font-size-base;
+	color: var(--dark-1);
+	position: relative;
+}
+
+h2 {
+	margin: 0;
+	font-weight: 400;
+	font-size: var(--header-font-size-small);
+	color: var(--dark-1);
+}
+
+p {
+	font-weight: 400;
+	font-size: var(--para-font-size-base);
+	color: var(--dark-1);
+	position: relative;
+	margin: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+p.jp {
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+/* Menu button and sidemenu */
+
+.nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--bg-1);
+	z-index: 1000;
+	
+}
+
+
+.nav-inner {
+	padding-right: var(--body-padding);
+	padding-left: var(--body-padding);
+	background-color: var(--bg-1);
+
+}
+
+#horizontal-nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	font-size: var(--language-font-size-base);
+	color: var(--dark-1);
+	padding: 7px;
+	margin: 0;
+}
+
+section#content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	align-items: stretch;
+	padding-bottom: 50px;
+}
+
+#vertical-content {
+	padding-bottom: 10px;
+	flex-grow: 1;
+	padding-top: 100px;
+}
+
+.vertical-section {
+	margin-top: 20px;
+}
+
+li.language-selector-item {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.hline {
+	height: 2px;
+	padding: 0;
+	margin: 0;
+	background-color: var(--secondary-theme)
+}
+
+
+.hline-grey{
+	height: 2px;
+	padding: 0;
+	margin: 0;
+	background-color: var(--lightgrey-1)
+}
+
+.project-card {
+	display: flex;
+	flex-direction: row;
+	/* flex-direction: column; */
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: var(--card-bg);
+	/* border: 1px solid var(--lightgrey-1); */
+	padding: 15px;
+	border-radius: 20px;
+}
+
+.project-image {
+	/* xdd */
+	/* width: 100%;
+	max-width: 300px;
+	max-height: 300px; */
+	width: 100px;
+	height: 100px;
+	background-color: var(--dark-1);
+	border-radius: 10px;
+	aspect-ratio: 1 / 1;
+	justify-self: center;
+	/* margin-left: auto;
+	margin-right: auto; */
+}
+
+.project-text {
+	padding-left: 20px;
+	font-size: var(--para-font-size-base);
+}
+
+.spacer {
+	height: 50px;
+	width: 100%;
+}
+
+.tech-list {
+	display: flex;
+	flex-wrap: wrap; /* Allow wrapping if there are many items */
+	gap: 8px; /* Spacing between items */
+	padding: 0;
+	margin: 0;
+	list-style: none; /* Remove bullets */
+  }
+
+li.tech-item {
+	padding: 4px 8px;
+	/* color: var(--lightgrey-1); */
+	/* border: 1px solid var(--lightgrey-1); */
+	border-radius: 10px;
+	background-color: var(--bg-1);
+	font-size: var(--tech-font-size-base);
+	white-space: nowrap;
+	transition: 0.3s;
+}
+
+li.tech-item:hover {
+	background-color: var(--lightgrey-1);
+
+}
+
+
+
+/* Tablets */
+@media (min-width: 768px) {
+
+	:root {
+		--header-font-size-base: 22px;
+		--header-font-size-small: 18px;
+		--para-font-size-base: 16px;
+		--language-font-size-base: 14px;
+
+	}
+
+	body {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.project-card {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/* Large devices, laptops, desktop monitors */
+@media (min-width: 992px) {
+
+	:root {
+		--header-font-size-base: 24px;
+		--header-font-size-small: 20px;
+		--para-font-size-base: 18px;
+		--language-font-size-base: 14px;
+
+		--body-padding: clamp(175px, 27vw, 4000px);
+	}
+
+	body {
+		/* Note that vw is not screen width, it is the width of the broswer window */
+		/* padding-left: calc(300px + 15vw);
+		padding-right: calc(300px + 15vw); */
+		/* padding-left: clamp(175px, 27vw, 4000px);
+		padding-right: clamp(175px, 27vw, 4000px); */
+		padding-left: var(--body-padding);
+		padding-right: var(--body-padding);
+	}
+
+
+	#vertical-content {
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+
+
+	.project-image {
+		height: 100px;
+		width: 100px;
+		aspect-ratio: 1 / 1;
+	}
+
+	.project-card {
+		padding: 25px;
+	}
+}
